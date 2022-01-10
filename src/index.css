@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: black;
+  color: white;
+}
+
+.App {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+
+nav {
+  width: 250px;
+  padding: 8px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 8px;
+}
+
+li button {
+  width: 100%;
+}
+
+button {
+  background-color: rgb(45, 45, 45);
+  border: 2px solid yellow;
+  color: yellow;
+  font-size: 1rem;
+  padding: 4px;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  gap: 4px;
+}
+
+input {
+  padding: 4px;
+  flex: 1 0 auto;
+  border: 2px solid yellow;
+  background-color: black;
+  color: yellow;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.cards article {
+  width: 300px;
+}
