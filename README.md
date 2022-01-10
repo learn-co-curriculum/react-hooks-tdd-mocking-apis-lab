@@ -189,6 +189,11 @@ Remember, our goal with `msw` is to recreate as much of the functionality of an
 external API as necessary in order to give ourselves control over the testing
 environment.
 
+You shouldn't need to update data in any of the files other than
+`src/mocks/server.js`, though it is helpful to explore the rest of the
+application and the tests got get a sense of how it should work and when the API
+requests will be made.
+
 It's helpful to explore the actual [SWAPI][swapi] API to get a feel for the
 endpoints we're mocking. What data do we get from requests to these URLS?
 
