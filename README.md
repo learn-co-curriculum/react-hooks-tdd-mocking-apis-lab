@@ -164,16 +164,12 @@ export const server = setupServer(...handlers);
 To get rid of the warnings, you'll need to use `msw` to create two new route
 handlers for the following URLs:
 
-### `https://swapi.dev/api/people`
-
-When a request is made to this route, send a mock response in JSON format with
-the data from the `skywalkerResults` variable in the `src/mocks/data.js` file.
-
-### `https://swapi.dev/api/films/:id`
-
-When a request is made to this route, send a mock response in JSON format with
-the data from the specific film in the `films` variable in the
-`src/mocks/data.js` file.
+- `https://swapi.dev/api/people`: When a request is made to this route, send a
+  mock response in JSON format with the data from the `skywalkerResults`
+  variable in the `src/mocks/data.js` file.
+- `https://swapi.dev/api/films/:id`: When a request is made to this route, send
+  a mock response in JSON format with the data from the specific film in the
+  `films` variable in the `src/mocks/data.js` file.
 
 In order to set up the route handler, you can use a route parameter to identify
 the ID from the url as in
@@ -202,8 +198,8 @@ endpoints we're mocking. What data do we get from requests to these URLS?
 
 How can we ensure that our application can access this same data when testing?
 
-If you're stuck, check out the solution branch of this repository to see how
-this could be implemented.
+If you're stuck, check out the [solution branch][solution] of this repository to
+see how this could be implemented.
 
 ## Resources
 
@@ -212,3 +208,5 @@ this could be implemented.
 
 [swapi]: https://swapi.dev/documentation
 [msw rest]: https://mswjs.io/docs/api/rest
+[solution]:
+  https://github.com/learn-co-curriculum/react-hooks-tdd-mocking-apis-lab/blob/solution/src/mocks/server.js
